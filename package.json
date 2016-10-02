@@ -2,4 +2,14 @@
   "name": "glsl-matrix",
   "version": "1.0.0",
   "description": "it is foundational matrix function made with glsl.",
+  "author": {
+    "name": "yoichi kobayashi",
+    "url": "http://www.tplh.net/"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ykob/glsl-matrix.git"
+  },
+  "private": "true"
 }
