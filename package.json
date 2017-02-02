@@ -1,6 +1,6 @@
 {
   "name": "glsl-matrix",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "it is foundational matrix function made with glsl.",
   "author": {
     "name": "yoichi kobayashi",
