@@ -13,10 +13,19 @@ npm i git://github.com/ykob/glsl-matrix.git
 ### with glslify
 
 ```
-#pragma glslify: translateMatrix = require(glsl-matrix/translateMatrix);
-#pragma glslify: scaleMatrix     = require(glsl-matrix/scaleMatrix);
-#pragma glslify: rotateMatrix    = require(glsl-matrix/rotateMatrix);
-#pragma glslify: rotateMatrixX   = require(glsl-matrix/rotateMatrixX);
-#pragma glslify: rotateMatrixY   = require(glsl-matrix/rotateMatrixY);
-#pragma glslify: rotateMatrixZ   = require(glsl-matrix/rotateMatrixZ);
+#pragma glslify: computeTranslateMat = require(glsl-matrix/computeTranslateMat);
+#pragma glslify: computeRotateMat = require(glsl-matrix/computeRotateMat);
+#pragma glslify: computeRotateMatX = require(glsl-matrix/computeRotateMatX);
+#pragma glslify: computeRotateMatY = require(glsl-matrix/computeRotateMatY);
+#pragma glslify: computeRotateMatZ = require(glsl-matrix/computeRotateMatZ);
+#pragma glslify: computeScaleMat = require(glsl-matrix/computeScaleMat);
+```
+
+### Cumulating transformations
+
+```
+mat4 translateMatrix = computeTranslateMat(vec3(100.0));
+mat4 computeRotateMat = computeRotateMat(radians(45.0), radians(45.0), radians(45.0));
+mat4 computeScaleMat = computeScaleMat(vec3(2.0));
+vec4 updatePosition = translateMatrix * rotateMatrix * scaleMatrix * vec4(position, 1.0);
 ```
