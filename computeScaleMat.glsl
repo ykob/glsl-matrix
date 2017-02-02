@@ -1,4 +1,4 @@
-mat4 scaleMatrix(vec3 scale) {
+mat4 computeScaleMat(vec3 scale) {
   return mat4(
     scale.x, 0.0, 0.0, 0.0,
     0.0, scale.y, 0.0, 0.0,
@@ -6,4 +6,4 @@ mat4 scaleMatrix(vec3 scale) {
     0.0, 0.0, 0.0, 1.0
   );
 }
-#pragma glslify: export(scaleMatrix)
+#pragma glslify: export(computeScaleMat)
