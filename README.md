@@ -24,8 +24,8 @@ npm i git://github.com/ykob/glsl-matrix.git
 ### Cumulating transformations
 
 ```
-mat4 translateMatrix = computeTranslateMat(vec3(100.0));
-mat4 computeRotateMat = computeRotateMat(radians(45.0), radians(45.0), radians(45.0));
-mat4 computeScaleMat = computeScaleMat(vec3(2.0));
-vec4 updatePosition = translateMatrix * rotateMatrix * scaleMatrix * vec4(position, 1.0);
+mat4 translateMat = computeTranslateMat(vec3(100.0));
+mat4 rotateMat = computeRotateMat(radians(45.0), radians(45.0), radians(45.0));
+mat4 scaleMat = computeScaleMat(vec3(2.0));
+vec4 updatePosition = translateMat * rotateMat * scaleMat * vec4(position, 1.0);
 ```
