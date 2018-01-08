@@ -1,4 +1,4 @@
-mat4 calcRotateMatY(float radian) {
+mat4 calcRotateMat4Y(float radian) {
   return mat4(
     cos(radian), 0.0, sin(radian), 0.0,
     0.0, 1.0, 0.0, 0.0,
@@ -6,4 +6,4 @@ mat4 calcRotateMatY(float radian) {
     0.0, 0.0, 0.0, 1.0
   );
 }
-#pragma glslify: export(calcRotateMatY)
+#pragma glslify: export(calcRotateMat4Y)
