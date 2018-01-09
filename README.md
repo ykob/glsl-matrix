@@ -25,7 +25,7 @@ npm i git://github.com/ykob/glsl-matrix.git
 
 ```
 mat4 translateMat = calcTranslateMat4(vec3(100.0));
-mat4 rotateMat = calcRotateMat4(radians(45.0), radians(45.0), radians(45.0));
+mat4 rotateMat = calcRotateMat4(vec3(radians(45.0)));
 mat4 scaleMat = calcScaleMat4(vec3(2.0));
 vec4 updatePosition = translateMat * rotateMat * scaleMat * vec4(position, 1.0);
 ```
