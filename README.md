@@ -19,7 +19,6 @@ npm i git://github.com/ykob/glsl-matrix.git
 #pragma glslify: calcRotateMat4Y = require(glsl-matrix/calcRotateMat4Y);
 #pragma glslify: calcRotateMat4Z = require(glsl-matrix/calcRotateMat4Z);
 #pragma glslify: calcScaleMat4 = require(glsl-matrix/calcScaleMat4);
-#pragma glslify: rotateAxisAngle = require(glsl-matrix/rotateAxisAngle);
 ```
 
 ### Cumulating transformations
