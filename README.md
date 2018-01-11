@@ -14,6 +14,7 @@ npm i git://github.com/ykob/glsl-matrix.git
 
 ```
 #pragma glslify: calcTranslateMat4 = require(glsl-matrix/calcTranslateMat4);
+#pragma glslify: calcRotateMat3 = require(glsl-matrix/calcRotateMat3);
 #pragma glslify: calcRotateMat4 = require(glsl-matrix/calcRotateMat4);
 #pragma glslify: calcRotateMat4X = require(glsl-matrix/calcRotateMat4X);
 #pragma glslify: calcRotateMat4Y = require(glsl-matrix/calcRotateMat4Y);
